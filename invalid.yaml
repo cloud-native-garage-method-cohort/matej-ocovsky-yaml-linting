@@ -1,7 +1,8 @@
 apiVersion: tekton.dev/v1beta1
+kind: Task
 metadata:
-name: cat-readme
-    spec:
+  name: cat-readme
+spec:
   steps:
     - name: cat-readme-exec
       image: quay.io/ibmgaragecloud/alpine-curl
